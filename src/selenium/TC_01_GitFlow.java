@@ -11,8 +11,9 @@ public class TC_01_GitFlow {
 	@Test
 	public void TC_01() {
 		driver = new FirefoxDriver();
-		driver.get("");
+		driver.get("http://google.com");
 		driver.manage().window().maximize();
+		driver.quit();
 	}
 
 }
