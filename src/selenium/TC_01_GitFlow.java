@@ -18,6 +18,7 @@ public class TC_01_GitFlow {
 		driver.findElement(By.xpath("//input[@name='btnK']")).click();
 		
 		driver.findElement(By.cssSelector("input[@name='q']")).sendKeys("Monkey Testing");
+		driver.findElement(By.name("q")).sendKeys("Adhoc Testing");
 		driver.findElement(By.xpath("//input[@name='btnK']")).click();
 		
 		driver.quit();
