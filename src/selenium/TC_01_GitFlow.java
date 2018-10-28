@@ -12,9 +12,9 @@ public class TC_01_GitFlow {
 	public void TC_01() {
 		driver = new FirefoxDriver();
 		driver.get("http://google.com");
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();		
 		driver.findElement(By.xpath("//input[@name='q']")).clear();
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Manual Testing");
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Automation Testing");
 		driver.findElement(By.xpath("//input[@name='btnK']")).click();
 		driver.quit();
 	}
