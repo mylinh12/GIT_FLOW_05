@@ -1,11 +1,11 @@
 package selenium;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class TC_01_GitFlow {
-
 	WebDriver driver;
 
 	@Test
@@ -13,6 +13,7 @@ public class TC_01_GitFlow {
 		driver = new FirefoxDriver();
 		driver.get("http://google.com");
 		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//input[@name='q']")).clear();
 		driver.quit();
 	}
 
