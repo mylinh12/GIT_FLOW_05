@@ -14,6 +14,8 @@ public class TC_01_GitFlow {
 		driver.get("http://google.com");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//input[@name='q']")).clear();
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Manual Testing");
+		driver.findElement(By.xpath("//input[@name='btnK']")).click();
 		driver.quit();
 	}
 
