@@ -16,6 +16,10 @@ public class TC_01_GitFlow {
 		driver.findElement(By.xpath("//input[@name='q']")).clear();
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Automation Testing");
 		driver.findElement(By.xpath("//input[@name='btnK']")).click();
+		
+		driver.findElement(By.cssSelector("input[@name='q']")).sendKeys("Monkey Testing");
+		driver.findElement(By.xpath("//input[@name='btnK']")).click();
+		
 		driver.quit();
 	}
 
